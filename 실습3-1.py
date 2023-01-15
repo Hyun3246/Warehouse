@@ -1,3 +1,5 @@
+# 리스트 평균 계산 프로그램
+
 def reduce_list(my_list):
     avg = sum(my_list) / len(my_list)
     

@@ -1,3 +1,5 @@
+# 16진수 덧셈 계산기
+
 def hexa_cal():
     final_sum = 0
     while True:

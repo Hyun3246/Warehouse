@@ -1,3 +1,5 @@
+# 별표 행렬 출력 프로그램
+
 import time
 
 def make_timer(func):

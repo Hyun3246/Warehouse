@@ -1,3 +1,5 @@
+# 입력한 숫자보다 작은 모은 완전제곱수 출력
+
 def square(n):
     for i in range(n):
         yield i * i

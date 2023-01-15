@@ -1,3 +1,5 @@
+# 리스트 평균값 & 중앙값 계산 프로그램
+
 user_list = input("리스트 숫자를 입력하세요: ").split(', ')
 
 user_list = [int(i) for i in user_list]

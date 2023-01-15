@@ -1,3 +1,5 @@
+# 전화번호 앞에 숫자 1 추가
+
 import re
 
 def add_one_at_front(number):
