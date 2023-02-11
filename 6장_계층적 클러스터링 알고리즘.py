@@ -7,7 +7,7 @@ dataset = pd.DataFrame({
     'y': [39, 36, 30, 52, 53, 46, 55, 59, 63, 70, 66, 63, 58, 23, 14, 8, 18, 7, 24, 10]
 })
 
-cluster =AgglomerativeClustering(n_clusters=2, affinity='euclidean', linkage='ward')
+cluster = AgglomerativeClustering(n_clusters=2, affinity='euclidean', linkage='ward')
 cluster.fit_predict(dataset)
 
 print(cluster.labels_)
