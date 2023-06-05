@@ -8,6 +8,10 @@ def square(n):
 
 my_input = int(input("정수를 입력하시오: "))
 
+for i in square(my_input):
+    print(i, end=" ")
+
+print()
 
 if my_input in square(my_input):
     print(True)
