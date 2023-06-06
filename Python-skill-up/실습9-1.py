@@ -1,3 +1,5 @@
+# 3차원 좌표 계산이 가능한 클래스 (덧셈, 뺄셈, 스칼라 곱셈 가능)
+
 class Point():
     def __init__(self, x = 0, y = 0, z = 0):
         self.x = x
