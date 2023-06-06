@@ -1,3 +1,5 @@
+# Money 클래스에서 더하기 지원
+
 from decimal import Decimal
 
 class Money(Decimal):
