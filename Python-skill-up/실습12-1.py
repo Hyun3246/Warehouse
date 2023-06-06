@@ -1,3 +1,5 @@
+# 파이썬 리스트 생성과 numpy 배열 생성의 속도 비교 & 덧셈 속도 비교
+
 import numpy as np
 from time import time
 
