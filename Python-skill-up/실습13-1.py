@@ -1,3 +1,5 @@
+# 함수 그래프 출력
+
 import numpy as np
 import matplotlib.pyplot as plt
 
