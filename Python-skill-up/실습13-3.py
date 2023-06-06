@@ -1,3 +1,5 @@
+# 10년 만기 주택담보대출 처음 20개 기간에 대한 차트(월 지급액의 원금 비율 그래프)
+
 import numpy as np
 import matplotlib.pyplot as plt
 import numpy_financial as npf
