@@ -1,3 +1,5 @@
+# 이름, 계정정보, 예금금액, 이자율을 포함하는 BankAcct 클래스. 이자율 조정, 인출 및 예금, 이자율 변경 및 시간의 경과 표현 가능
+
 class BankAcct:
     def __init__(self, name, num, deposit, interest_rate):
         self.name = name
