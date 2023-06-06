@@ -1,3 +1,5 @@
+# 의사-난수 게임에서 사용자가 원하는 숫자 범위 입력
+
 import random
 
 def play_the_game():
