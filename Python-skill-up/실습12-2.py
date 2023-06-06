@@ -1,3 +1,5 @@
+# numpy 패키지로 1000 X 1000 배열 생성 속도 측정 & 평균과 표준편차 구하기
+
 import numpy as np
 from time import time
 
