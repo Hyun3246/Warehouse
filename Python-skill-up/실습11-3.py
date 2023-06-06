@@ -1,3 +1,5 @@
+# Deck 객체로 5장의 카드 가져오는 프로그램. 사용자가 제출한 카드 출력
+
 import random
 
 class Deck():
