@@ -1,3 +1,5 @@
+# Decimal 클래스를 이용해서 원하는 숫자 입력받는 프로그램
+
 from decimal import Decimal
 
 sign = int(input("부호를 입력하세요(1은 양수, 0은 음수): "))
