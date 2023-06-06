@@ -5,7 +5,7 @@ num_table = [
     [11, 55, 100, 225, 6449],
     [1, 1, 8, 98, 9],
     [4, 5, 777, 848, 9999],
-    [156, 15651, 1303, 654, 0]
+    [156, 156511515, 1303, 654, 0]
 ]
 
 max_width = -1
@@ -14,7 +14,7 @@ for x in num_table:
         if y > max_width:
             max_width = y
 
-max_width = len(str(max_width))
+max_width = len(str(max_width))+3
 
 
 for i in num_table:
