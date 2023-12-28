@@ -1,1 +1,2 @@
-BaekJoon 코딩 공부
+## BaekJoon
+Online Coding study tool.
