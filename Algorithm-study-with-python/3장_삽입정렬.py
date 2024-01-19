@@ -1,11 +1,10 @@
 def InsertionSort(list):
-    for i in range(1, len(list)):
-        # key 선정
-        j = i - 1
-        key = list[i]
-
-        while (list[j] > key) and (j >= 0):
-            list[j + 1] = list[j]
-            j = j - 1
-        list[j + 1] = key
+    for j in range(len(A)):
+        key = A[j]
+        # A[j]를 정렬된 A[0..j-1]에 삽입
+        i = j-1
+        while i>-1 and A[i]>key:
+            A[i+1] = A[i]
+            i = i-1
+        A[i+1] = key
     return list
