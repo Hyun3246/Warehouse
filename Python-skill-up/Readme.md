@@ -5,7 +5,7 @@
 </div>
 
 - **Book**: Python skill up
-- **Completion Date**: February 11, 2023
+- **Completion Date**: January 6, 2023
 - **Main Language**: Python
 
 <div align="center">
