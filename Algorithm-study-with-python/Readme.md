@@ -4,7 +4,7 @@
 
 </div>
 
-- **Book**: Algorithm-study-with-python
+- **Book**: Algorithm study with python
 - **Completion Date**: February 11, 2023
 - **Main Language**: Python
 
