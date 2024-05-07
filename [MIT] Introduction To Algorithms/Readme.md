@@ -1,6 +1,6 @@
 <div align="center">
   
-# BaekJoon
+# [MIT] Introduction To Algorithms
 
 </div>
 
