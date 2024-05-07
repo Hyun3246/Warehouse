@@ -11,6 +11,7 @@ N = int(sys.stdin.readline().strip())
 
 current_local = [int(sys.stdin.readline().strip()) for i in range(N)]
 
+# 간격이 중요 - 기존 간격 사이의 최대공약수가 곧 최종 가로수들 사이의 간격
 intervals = [(current_local[i + 1] - current_local[i]) for i in range(N-1)]
 
 for i in range(len(intervals) - 1):
