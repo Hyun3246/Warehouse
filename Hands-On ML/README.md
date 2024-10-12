@@ -1,6 +1,6 @@
 <div align="center">
   
-# Python for ML
+# Hands-On ML
 
 </div>
 
