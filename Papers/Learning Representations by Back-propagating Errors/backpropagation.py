@@ -12,9 +12,9 @@ class MLP(object):
     def identity(x):
         return x
     
-    # inverse of sigmoid
+    # derivative of sigmoid
     @staticmethod
-    def inv_sig(x):
+    def derivative_sig(x):
         result = MLP.sigmoid(x)
         return result * (1 - result)
     
@@ -40,52 +40,52 @@ class MLP(object):
     
     # feed forward
     def feed_forward(self, xs):
-        self.U = [xs]       # list for result of XW + b
-        self.Z = [xs]       # list for result of a = g(z)
+        self.Z = [xs]       # list for result of XW + b
+        self.A = [xs]       # list for result of a = g(z)
 
         for i in range(1, len(self.layers)):
-            u = self.Z[i-1].dot(self.weights[i]) + self.bias[i]     # XW + b
-            z = self.activate[i](u)                                 # a = g(z)
-            self.U.append(u)
+            z = self.A[i-1].dot(self.weights[i]) + self.bias[i]     # Z = XW + b
+            a = self.activate[i](z)                                 # A = g(Z)
             self.Z.append(z)
+            self.A.append(a)
 
-        return self.Z[-1]       # return latest result
+        return self.A[-1]       # return latest result
     
     # back propagation
     def back_propagate(self, xs, ys):
         pred_ys = self.feed_forward(xs)     # feed forward
-        self.D = []                         # list for errors
+        self.dZ = []                         # list for errors
 
         for i in reversed(range(1, len(self.layers))):
 
             # derivative
             if i == len(self.layers) - 1:       # for last layer
-                d = pred_ys - ys
+                dz = pred_ys - ys
             else:                               # for other layers
-                d = self.inv_sig(self.U[i]) * (self.D[-1].dot(self.weights[i+1].T))
+                dz = self.derivative_sig(self.Z[i]) * (self.dZ[-1].dot(self.weights[i+1].T))
             
-            dW = self.Z[i-1].T.dot(d)
-            db = np.sum(d, axis=0)
+            dW = self.A[i-1].T.dot(dz)
+            db = np.sum(dz, axis=0)
 
             # update weights and bias
             self.weights[i] -= self.learning_rate * dW
             self.bias[i] -= self.learning_rate * db
             
-            self.D.append(d)
+            self.dZ.append(dz)
         return
     
     # evaluation function
     def evaluate(self, xs, ys):
         pred_ys = self.feed_forward(xs)
-        d = pred_ys - ys
-        return np.sqrt(np.mean(d**2))
+        e = pred_ys - ys
+        return np.sqrt(np.mean(e**2))
 
 # sample
 if __name__ == '__main__':
     
     model = MLP(layers=[1,5,5,5,1])
     
-    train_x = np.linspace(-5,5,10, dtype=np.float64)
+    train_x = np.linspace(-5,5,10)
     train_y = np.sin(train_x)
 
     xs = train_x.reshape(-1,1)
