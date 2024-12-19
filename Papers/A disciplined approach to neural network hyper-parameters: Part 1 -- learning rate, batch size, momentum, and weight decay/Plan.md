@@ -51,3 +51,5 @@
     - WD=4e-3
     - TBS=536
     (Figure 7d)
+
+All values can be changed according to the dataset.
