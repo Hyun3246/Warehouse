@@ -1,7 +1,7 @@
 <div align="center">
   
 # Code-Warehouse
-Just store codes.
+Leave Footprints.
 
 It will be useful someday....
 
