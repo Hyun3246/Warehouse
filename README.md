@@ -1,10 +1,8 @@
 <div align="center">
   
 # Code-Warehouse
-Self-directed learning for improved ability.
+Store what I learned from Self-directed learning.
 
-Leave Footprints.
-
-It will be useful someday....
+Continue to apply and develop afterward.
 
 </div>
