@@ -4,7 +4,7 @@
 
 </div>
 
-- **Course**: Hands-On ML
+- **Book**: Hands-On ML
 - **Date**: October 10, 2024 ~
 - **Main Language**: Python
 
