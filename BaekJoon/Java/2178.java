@@ -22,7 +22,7 @@ public class Main {
         }
 
 
-        // 여기에 로직을 구현해서 풀어봐!
+        
         boolean visited[][] = new boolean[N][M];
 
         for (int i = 0; i < N; i++) {
