@@ -1,0 +1,29 @@
+name: vla-workspace
+
+services:
+  gpu-smoke:
+    profiles: [smoke]
+    image: nvidia/cuda:12.2.2-base-ubuntu22.04
+    command: ["nvidia-smi"]
+    devices:
+      - "nvidia.com/gpu=1"
+
+  libero-sim:
+    profiles: [sim]
+    build:
+      context: .
+      dockerfile: containers/libero/Dockerfile
+      args:
+        LIBERO_COMMIT: 8f1084e3132a39270c3a13ebe37270a43ece2a01
+    image: vla/libero-sim:2026-08-18
+    init: true
+    shm_size: 2gb
+    environment:
+      MUJOCO_GL: egl
+      MUJOCO_EGL_DEVICE_ID: "0"
+      PYOPENGL_PLATFORM: egl
+      NVIDIA_DRIVER_CAPABILITIES: compute,utility,graphics
+    devices:
+      - "nvidia.com/gpu=1"
+    volumes:
+      - "${VLA_DATA_ROOT:-/home/julnk0207/vla-artifacts}:/artifacts"

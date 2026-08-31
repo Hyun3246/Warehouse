@@ -1,0 +1,20 @@
+Using Python 3.10.12 environment at: projects/openvla/.venv
+Resolved 126 packages in 1.00s
+   Building openvla @ file:///home/julnk0207/vla-workspace/projects/openvla
+      Built openvla @ file:///home/julnk0207/vla-workspace/projects/openvla
+Prepared 1 package in 645ms
+Uninstalled 1 package in 0.93ms
+Installed 1 package in 1ms
+ ~ openvla==0.0.3 (from file:///home/julnk0207/vla-workspace/projects/openvla)
+Using Python 3.10.12 environment at: projects/openvla/.venv
+Resolved 60 packages in 657ms
+   Building libero @ file:///home/julnk0207/vla-workspace/projects/openpi/third_party/libero
+      Built libero @ file:///home/julnk0207/vla-workspace/projects/openpi/third_party/libero
+Prepared 1 package in 209ms
+Uninstalled 1 package in 1ms
+Installed 1 package in 4ms
+ ~ libero==0.1.0 (from file:///home/julnk0207/vla-workspace/projects/openpi/third_party/libero)
+Using Python 3.10.12 environment at: projects/openvla/.venv
+Checked 2 packages in 3ms
+Skipping FlashAttention-2 for compute capability 7.5.
+Prepared openvla environment: /home/julnk0207/vla-workspace/projects/openvla/.venv

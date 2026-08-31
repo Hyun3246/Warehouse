@@ -1,0 +1,15 @@
+config/host.env
+.env
+.venv/
+__pycache__/
+*.py[cod]
+
+datasets/
+checkpoints/
+assets/
+runs/
+cache/
+
+projects/*
+!projects/.gitkeep
+

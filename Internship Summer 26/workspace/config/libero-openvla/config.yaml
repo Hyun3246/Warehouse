@@ -1,0 +1,6 @@
+assets: /home/julnk0207/vla-workspace/projects/openpi/third_party/libero/libero/libero/assets
+bddl_files: /home/julnk0207/vla-workspace/projects/openpi/third_party/libero/libero/libero/bddl_files
+benchmark_root: /home/julnk0207/vla-workspace/projects/openpi/third_party/libero/libero/libero
+datasets: /home/julnk0207/vla-artifacts/datasets
+init_states: /home/julnk0207/vla-workspace/projects/openpi/third_party/libero/libero/libero/init_files
+

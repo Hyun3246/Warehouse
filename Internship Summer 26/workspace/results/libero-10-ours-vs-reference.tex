@@ -1,0 +1,35 @@
+% Requires \usepackage{booktabs}
+\begin{table}[t]
+  \centering
+  \caption{LIBERO-10 success rates for our reduced screening and the
+  corresponding reported reference values. Higher is better.}
+  \label{tab:libero10-ours-vs-reference}
+  \setlength{\tabcolsep}{7pt}
+  \begin{tabular}{lccc}
+    \toprule
+    Model & Ours (\%) & Reference (\%) & $\Delta$ (pp) \\
+    \midrule
+    $\pi_{0.5}$-LIBERO & 93.0 & 92.4 & +0.6 \\
+    $\pi_{0.5}$-base & 0.0 & -- & -- \\
+    OpenVLA-7B & 47.0 & $53.7 \pm 1.3$ & -6.7 \\
+    OpenVLA-OFT & 96.0 & 94.5 & +1.5 \\
+    VLA-JEPA & \textbf{98.0} & \textbf{95.8} & +2.2 \\
+    SmolVLA (0.45B) & 44.0 & 71.0 & -27.0 \\
+    $\pi_{0}$-FAST & 87.0 & 60.2 & +26.8 \\
+    \bottomrule
+  \end{tabular}
+
+  \vspace{2pt}
+  \begin{minipage}{0.96\linewidth}
+    \footnotesize
+    \textit{Notes.} Ours uses one seed and 10 trials for each of the 10
+    LIBERO-10 tasks (100 episodes per model). Reference values use the closest
+    checkpoint/input variant to the evaluated model: the released
+    $\pi_{0.5}$-LIBERO checkpoint; OpenVLA-OFT with third-person and wrist
+    images plus proprioception; and the 0.45B SmolVLA paper variant. The
+    $\pi_{0.5}$ base model has no reported zero-shot LIBERO-10 value. Our
+    SmolVLA result uses \texttt{n\_action\_steps=10}. Reported
+    protocols are not uniform, so $\Delta$ is descriptive rather than a
+    reproduction claim.
+  \end{minipage}
+\end{table}

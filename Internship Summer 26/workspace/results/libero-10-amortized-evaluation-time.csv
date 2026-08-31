@@ -1,0 +1,8 @@
+model,total_elapsed_seconds,episodes,amortized_seconds_per_episode,measurement_basis
+OpenVLA-OFT,1932.023648,100,19.3,screening log birth-to-final-write
+SmolVLA,3619.055062,100,36.2,screening console birth-to-final-write; n_action_steps=10
+pi0-FAST,5085.711782,100,50.9,screening console birth-to-final-write
+pi0.5-LIBERO,6232.809617,100,62.3,manifest started_at-to-finished_at
+pi0.5-base,11948.237588,100,119.5,manifest started_at-to-finished_at
+VLA-JEPA,14410.878119,100,144.1,screening console birth-to-final-write
+OpenVLA-7B,15534.250000,100,155.3,screening log birth-to-final-write

@@ -1,0 +1,8 @@
+{
+  "features": {
+    "cdi": true
+  },
+  "cdi-spec-dirs": [
+    "/home/julnk0207/.config/cdi"
+  ]
+}

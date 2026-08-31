@@ -1,0 +1,5 @@
+assets: /home/julnk0207/vla-workspace/projects/lerobot/.venv/lib/python3.12/site-packages/libero/libero/./assets
+bddl_files: /home/julnk0207/vla-workspace/projects/lerobot/.venv/lib/python3.12/site-packages/libero/libero/./bddl_files
+benchmark_root: /home/julnk0207/vla-workspace/projects/lerobot/.venv/lib/python3.12/site-packages/libero/libero
+datasets: /home/julnk0207/vla-workspace/projects/lerobot/.venv/lib/python3.12/site-packages/libero/libero/../datasets
+init_states: /home/julnk0207/vla-workspace/projects/lerobot/.venv/lib/python3.12/site-packages/libero/libero/./init_files
